@@ -1,8 +1,14 @@
-export function IconLogoShok() {
+interface IconHWProps {
+  w: string
+  h: string
+}
+export function IconLogoShok(props: IconHWProps) {
+  const { w, h } = props
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      width='300'
+      width={w}
+      height={h}
       viewBox='0 0 331.23 27.764'
       className='fill-[#303e3e]'
     >
@@ -65,6 +71,48 @@ export function IconLogoShok() {
           className='a'
         />
       </g>
+    </svg>
+  )
+}
+export function IconClose() {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      className='icon icon-tabler icon-tabler-x'
+      width={24}
+      height={24}
+      viewBox='0 0 24 24'
+      strokeWidth='1.5'
+      stroke='currentColor'
+      fill='none'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+    >
+      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+      <path d='M18 6l-12 12' />
+      <path d='M6 6l12 12' />
+    </svg>
+  )
+}
+
+export function IconMenu() {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      className='icon icon-tabler icon-tabler-menu-2'
+      width={24}
+      height={24}
+      viewBox='0 0 24 24'
+      strokeWidth='1.5'
+      stroke='currentColor'
+      fill='none'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+    >
+      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+      <path d='M4 6l16 0' />
+      <path d='M4 12l16 0' />
+      <path d='M4 18l16 0' />
     </svg>
   )
 }
