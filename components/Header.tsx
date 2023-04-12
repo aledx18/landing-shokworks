@@ -15,7 +15,7 @@ export default function Header() {
         </div>
 
         <div className='container flex flex-col items-center'>
-          <div className='relative my-32 flex h-full w-full flex-col justify-center items-center text-center'>
+          <div className='relative md:my-32 my-28 flex h-full w-full flex-col justify-center items-center text-center'>
             <Image
               src='/community1.png'
               width={350}
@@ -24,18 +24,18 @@ export default function Header() {
               alt='image'
               className='w-auto h-auto'
             />
-            <div className='mx-96 pt-8'>
-              <h1 className='font-bold px-24 text-4xl text-zinc-800'>
+            <div className='lg:mx-96 pt-8'>
+              <h1 className='font-bold px-10 lg:px-40 lg:text-5xl md:text-4xl text-xl text-zinc-800'>
                 A Brand New Way To See The World
               </h1>
               <div className='flex justify-center gap-4 pt-8'>
-                <button className='group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-[#2C3636] to-[#1B92C8] p-0.5 text-sm font-medium text-white hover:text-[#185F7F] focus:outline-none focus:ring-1'>
-                  <span className='relative rounded-md px-6 py-2.5 transition-all duration-75 ease-in hover:text-[#185F7F] group-hover:bg-white'>
+                <button className='group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-[#2C3636] to-[#1B92C8] p-0.5 md:text-sm text-xs text-white hover:text-[#185F7F] focus:outline-none focus:ring-1'>
+                  <span className='relative rounded-md md:px-6 px-4 py-2.5 transition-all duration-75 ease-in hover:text-[#185F7F] group-hover:bg-white'>
                     Our Works
                   </span>
                 </button>
-                <button className='group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-[#2C3636] to-[#1B92C8] p-0.5 text-sm text-white font-medium hover:text-white focus:outline-none focus:ring-1'>
-                  <span className='relative rounded-md px-6 py-2.5 transition-all duration-75 ease-in bg-white group-hover:bg-gradient-to-r from-[#2C3636] to-[#1B92C8] text-[#185F7F] hover:text-white'>
+                <button className='group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-[#2C3636] to-[#1B92C8] p-0.5 md:text-sm text-xs text-white hover:text-white focus:outline-none focus:ring-1'>
+                  <span className='relative rounded-md md:px-6 px-4 py-2.5 transition-all duration-75 ease-in bg-white group-hover:bg-gradient-to-r from-[#2C3636] to-[#1B92C8] text-[#185F7F] hover:text-white'>
                     Know More
                   </span>
                 </button>

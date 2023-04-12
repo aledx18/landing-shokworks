@@ -126,7 +126,7 @@ export default function NavBar() {
                     item.current
                       ? 'bg-gray-900 text-white'
                       : 'text-[#555555] hover:bg-gray-300',
-                    'block rounded-md px-3 py-2 text-base font-medium'
+                    'block rounded-md px-3 py-2 text-sm font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
@@ -158,7 +158,7 @@ export default function NavBar() {
                     placeholder='Search Here...'
                   />
                 </div>
-                <button className='group relative md:inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-[#2C3636] to-[#1B92C8] p-0.5 text-sm font-medium text-white focus:outline-none focus:ring-1 px-6 py-2.5'>
+                <button className='group relative md:inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-[#2C3636] to-[#1B92C8] p-0.5 text-xs font-medium text-white focus:outline-none focus:ring-1 py-2'>
                   Contact Us
                 </button>
               </div>
