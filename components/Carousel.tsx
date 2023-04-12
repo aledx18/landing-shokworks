@@ -1,5 +1,13 @@
 import Image from 'next/image'
 import { News } from './interface/interface'
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+// Import Swiper styles
+import 'swiper/css'
+import 'swiper/css/pagination'
+
+// import required modules
+import { Pagination } from 'swiper'
 
 interface DetailProps {
   data: News
@@ -18,24 +26,52 @@ export default function Carousel({ data }: DetailProps) {
           </h1>
         </div>
         <div className='flex flex-wrap m-4'>
-          {data.articles.slice(0, 5).map((item, i) => (
-            <div key={i} className='xl:w-1/4 md:w-1/2 p-4'>
-              <div className='bg-opacity-40 p-6 rounded-md shadow-lg'>
-                <Image
-                  className='h-auto rounded-full w-auto object-cover object-center '
-                  src={item.urlToImage}
-                  alt='content'
-                  width={100}
-                  height={100}
-                />
+          <Swiper
+            slidesPerView={4}
+            spaceBetween={9}
+            pagination={{
+              clickable: true
+            }}
+            breakpoints={{
+              '@0.00': {
+                slidesPerView: 1
+              },
+              '@0.75': {
+                slidesPerView: 2
+              },
+              '@1.00': {
+                slidesPerView: 3
+              },
+              '@1.50': {
+                slidesPerView: 4
+              }
+            }}
+            modules={[Pagination]}
+            className='mySwiper'
+          >
+            {data.articles.slice(0, 8).map((item, i) => (
+              <SwiperSlide key={i} className='cursor-pointer'>
+                <div className='flex flex-col p-6 rounded-md shadow-lg items-center'>
+                  <div className='w-6/12 sm:w-4/12 px-4'>
+                    <Image
+                      className='shadow-lg rounded-full max-w-full h-auto align-middle border-none'
+                      src='https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/team-2-800x800.jpg'
+                      alt='content'
+                      width={100}
+                      height={100}
+                    />
+                  </div>
 
-                <h2 className='text-lg text-black font-semibold title-font mb-4'>
-                  {item.title}
-                </h2>
-                <p className='leading-relaxed text-black'>{item.description}</p>
-              </div>
-            </div>
-          ))}
+                  <h2 className='text-lg text-black font-semibold title-font mb-4'>
+                    {item.title}
+                  </h2>
+                  <p className='leading-relaxed text-sm text-black'>
+                    {item.description}
+                  </p>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </section>

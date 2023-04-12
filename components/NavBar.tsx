@@ -45,7 +45,7 @@ export default function NavBar() {
     <Disclosure as='nav' className='bg-white'>
       {({ open }) => (
         <>
-          <div className='mx-1 md:mx-2 lg:mx-16 mt-2'>
+          <div className='mx-1 md:mx-2 lg:mx-16 mt-4'>
             <div className='relative flex h-16 items-center justify-between'>
               {/* Menu Navbar */}
               <div className='flex flex-1 items-center justify-between'>
@@ -54,7 +54,7 @@ export default function NavBar() {
                 </Link>
 
                 <div
-                  className='items-center justify-between hidden w-full md:flex md:w-auto '
+                  className='items-center lg:justify-between hidden w-full md:flex md:w-auto '
                   id='navbar-search'
                 >
                   <ul className='flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white'>
