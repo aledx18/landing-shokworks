@@ -1,3 +1,4 @@
+import About from '../../components/About'
 import Header from '../../components/Header'
 import NavBar from '../../components/NavBar'
 
@@ -6,6 +7,9 @@ export default function Home() {
     <>
       <NavBar />
       <Header />
+      <section className='lg:mx-52'>
+        <About />
+      </section>
     </>
   )
 }

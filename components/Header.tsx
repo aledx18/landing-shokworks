@@ -25,7 +25,7 @@ export default function Header() {
               className='w-auto h-auto'
             />
             <div className='lg:mx-96 pt-8'>
-              <h1 className='font-bold px-10 lg:px-40 lg:text-5xl md:text-4xl text-xl text-zinc-800'>
+              <h1 className='font-bold px-10 lg:px-40 md:text-4xl text-xl text-[#222222]'>
                 A Brand New Way To See The World
               </h1>
               <div className='flex justify-center gap-4 pt-8'>
