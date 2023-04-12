@@ -2,6 +2,7 @@ import About from '../../components/About'
 import Carousel from '../../components/Carousel'
 import Header from '../../components/Header'
 import NavBar from '../../components/NavBar'
+import PartnesClients from '../../components/PartnesClients'
 import { fetchDetail } from '../../components/getNewsApi'
 import { News } from '../../components/interface/interface'
 
@@ -16,6 +17,7 @@ export default function Home({ data }: DetailProps) {
       <Header />
       <About />
       <Carousel data={data} />
+      <PartnesClients />
     </>
   )
 }
