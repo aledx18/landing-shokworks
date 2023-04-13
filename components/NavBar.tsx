@@ -50,7 +50,7 @@ export default function NavBar() {
               {/* Menu Navbar */}
               <div className='flex flex-1 items-center justify-between'>
                 <Link href='#' className='flex items-center'>
-                  <IconLogoShok w='250' h='300' />
+                  <IconLogoShok w='250' h='100' />
                 </Link>
 
                 <div

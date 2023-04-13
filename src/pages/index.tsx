@@ -1,5 +1,6 @@
 import About from '../../components/About'
 import Carousel from '../../components/Carousel'
+import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import NavBar from '../../components/NavBar'
 import PartnesClients from '../../components/PartnesClients'
@@ -18,6 +19,7 @@ export default function Home({ data }: DetailProps) {
       <About />
       <Carousel data={data} />
       <PartnesClients />
+      <Footer />
     </>
   )
 }
