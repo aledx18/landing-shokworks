@@ -39,7 +39,7 @@ export default function PartnesClients() {
     <section className='body-font'>
       <div className='container px-5 py-24 mx-auto flex flex-col'>
         <div className='flex flex-col text-center w-full mb-20'>
-          <h1 className='sm:text-3xl text-2xl font-medium title-font text-[#222222]'>
+          <h1 className='sm:text-3xl text-2xl font-montserrat font-semibold title-font text-[#222222]'>
             Our Partnes & Clients
           </h1>
         </div>

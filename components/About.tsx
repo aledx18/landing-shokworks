@@ -5,10 +5,10 @@ export default function About() {
     <section className='text-gray-400 body-font lg:mx-52'>
       <div className='container mx-auto flex py-24 md:flex-row flex-col items-center'>
         <div className='lg:flex-grow md:w-1/2 lg:pr-40 md:pr-24 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center'>
-          <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-[#222222]'>
+          <h1 className='sm:text-4xl text-3xl mb-4 font-montserrat lg:mr-40 text-[#222222]'>
             The Process About Our Work
           </h1>
-          <p className='mb-8 leading-relaxed text-[#555555]'>
+          <p className='mb-8 text-[#555555]'>
             Alejandro Laplana leads and adaptable end-to-end development team
             consisting of a large portion of captable enterprise mixed reality
             solutions.
@@ -41,8 +41,9 @@ export default function About() {
           />
         </div>
         <div className='lg:flex-grow md:w-1/2 lg:pl-48 md:pl-20 flex flex-col md:items-start md:text-left items-center text-center'>
-          <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-[#222222]'>
-            We are here to always help you
+          <h1 className='lg:mr-20 sm:text-4xl text-3xl mb-4 text-[#222222] font-montserrat'>
+            We are here to <span className='font-semibold'>always help</span>{' '}
+            you
           </h1>
           <p className='mb-8 leading-relaxed text-[#555555]'>
             Shokworks team provide solutions and guidance to every project,

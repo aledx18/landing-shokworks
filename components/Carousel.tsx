@@ -18,10 +18,10 @@ export default function Carousel({ data }: DetailProps) {
     <section className='text-gray-400 body-font'>
       <div className='container px-5 py-24 mx-auto'>
         <div className='flex flex-col w-full mb-20 items-center justify-center'>
-          <h1 className='sm:text-3xl text-2xl font-medium title-font mb-2 text-[#222222]'>
+          <h1 className='sm:text-3xl text-2xl font-montserrat mb-2 text-[#222222]'>
             What is the
           </h1>
-          <h1 className='sm:text-3xl text-2xl font-semibold text-[#222222]'>
+          <h1 className='sm:text-3xl text-2xl font-montserrat font-semibold text-[#222222]'>
             Speciality Of Us?
           </h1>
         </div>

@@ -14,7 +14,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['var(--poppins-font)', ...fontFamily.sans],
-        Hind: ['var(--hind-font)', ...fontFamily.serif]
+        montserrat: ['var(--montserrat-font)', ...fontFamily.serif]
       },
       colors: {
         blackOne: '#121212',
