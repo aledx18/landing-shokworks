@@ -51,22 +51,20 @@ export default function Carousel({ data }: DetailProps) {
           >
             {data.articles.slice(0, 8).map((item, i) => (
               <SwiperSlide key={i} className='cursor-pointer'>
-                <div className='flex flex-col p-6 rounded-md shadow-lg items-center'>
-                  <div className='w-6/12 sm:w-4/12 px-4'>
-                    <Image
-                      className='shadow-lg rounded-full max-w-full h-auto align-middle border-none'
-                      src='https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/team-2-800x800.jpg'
-                      alt='content'
-                      width={100}
-                      height={100}
-                    />
-                  </div>
+                <div className='flex flex-col p-6 rounded-md shadow-lg max-h-96 items-center'>
+                  <Image
+                    className='shadow-lg rounded-full w-auto h-auto border-none'
+                    src={item.urlToImage}
+                    alt='content'
+                    width={150}
+                    height={400}
+                  />
 
-                  <h2 className='text-lg text-black font-semibold title-font mb-4'>
+                  <h2 className='text-lg text-black font-semibold title-font my-2'>
                     {item.title}
                   </h2>
                   <p className='leading-relaxed text-sm text-black'>
-                    {item.description}
+                    {item.description.slice(0, 150)}
                   </p>
                 </div>
               </SwiperSlide>

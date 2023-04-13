@@ -5,14 +5,17 @@ import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import NavBar from '../../components/NavBar'
 import PartnesClients from '../../components/PartnesClients'
+import Testimonial from '../../components/Testimonial'
 import { fetchDetail } from '../../components/getNewsApi'
-import { News } from '../../components/interface/interface'
+import { fetchTestimon } from '../../components/getTestimonials'
+import { News, Coments } from '../../components/interface/interface'
 
 interface DetailProps {
   data: News
+  Testimonials: Coments[]
 }
 
-export default function Home({ data }: DetailProps) {
+export default function Home({ data, Testimonials }: DetailProps) {
   return (
     <>
       <NavBar />
@@ -20,6 +23,7 @@ export default function Home({ data }: DetailProps) {
       <About />
       <Carousel data={data} />
       <PartnesClients />
+      <Testimonial Testimonials={Testimonials} />
       <Contact />
       <Footer />
     </>
@@ -28,6 +32,7 @@ export default function Home({ data }: DetailProps) {
 
 export async function getStaticProps() {
   const data = await fetchDetail()
+  const Testimonials = await fetchTestimon()
 
-  return { props: { data } }
+  return { props: { data, Testimonials } }
 }

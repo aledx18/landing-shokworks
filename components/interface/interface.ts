@@ -1,8 +1,8 @@
-export interface Source {
+interface Source {
   id: string
   name: string
 }
-export interface Article {
+interface Article {
   source: Source
   author: string
   title: string
@@ -16,4 +16,10 @@ export interface News {
   status: string
   totalResults: number
   articles: Article[]
+}
+export interface Coments {
+  id: number
+  title: string
+  body: string
+  userId: number
 }
