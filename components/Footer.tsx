@@ -67,7 +67,7 @@ export default function Footer() {
             <h2 className='title-font font-semibold text-[#101C21] tracking-widest text-sm my-4'>
               Follow Us
             </h2>
-            <div className='flex gap-2'>
+            <div className='flex gap-2 md:flex-row md:justify-start items-center justify-center'>
               <div className='bg-gradient-to-r from-[#6362D7] via-[#6362D7] to-[#FF8FE2] p-2 rounded-full'>
                 <IconFacebook />
               </div>

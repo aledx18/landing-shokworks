@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import About from '../../components/About'
 import Carousel from '../../components/Carousel'
 import Contact from '../../components/Contact'
@@ -18,14 +19,22 @@ interface DetailProps {
 export default function Home({ data, Testimonials }: DetailProps) {
   return (
     <>
-      <NavBar />
-      <Header />
+      <Head>
+        <title>Shockworks</title>
+        <link rel='shortcut icon' href='/favicon.ico' />
+      </Head>
+      <header>
+        <NavBar />
+        <Header />
+      </header>
       <About />
       <Carousel data={data} />
       <PartnesClients />
       <Testimonial Testimonials={Testimonials} />
       <Contact />
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }

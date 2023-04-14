@@ -14,7 +14,7 @@ export default function Header() {
           />
         </div>
 
-        <div className='container flex flex-col items-center'>
+        <div className='container flex flex-col items-center md:mx-auto'>
           <div className='relative md:my-32 my-28 flex h-full w-full flex-col justify-center items-center text-center'>
             <Image
               src='/community1.png'

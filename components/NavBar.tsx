@@ -48,8 +48,11 @@ export default function NavBar() {
           <div className='mx-1 md:mx-2 lg:mx-16 mt-4'>
             <div className='relative flex h-16 items-center justify-between'>
               {/* Menu Navbar */}
-              <div className='flex flex-1 items-center justify-between'>
-                <Link href='#' className='flex items-center'>
+              <div className='flex flex-1 items-center justify-between lg:flex-row md:flex-col'>
+                <Link
+                  href='#'
+                  className='flex items-center pt-0 lg:pt-0 md:pt-6'
+                >
                   <IconLogoShok w='250' h='100' />
                 </Link>
 
